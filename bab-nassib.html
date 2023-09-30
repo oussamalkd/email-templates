@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Tajawal", Arial, Helvetica, sans-serif;
+        }
+        html {
+            direction: rtl;
+            width: 100%;
+            max-width: 1280px;
+            margin: auto;
+        }
+        .bab-nassib-email-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 2rem 0;
+            background-color: #3D184E;
+            padding: 1rem 2rem;
+        }
+        .bab-nassib-email-header .logo {
+            width: 5rem !important;
+        }
+        .bab-nassib-email-footer {
+            display:  flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: #F1EFEE;
+            padding: 0.5rem;
+        }
+        .footer-content {
+            text-align: center;
+        }
+        .bab-nassib-email-content {
+            width: 80%;
+            margin: auto;
+            padding: 5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="bab-nassib-email-header">
+        <div class="logo">
+            <a href="http://app-bn.onrender.com/" target="_blank" rel="noopener noreferrer">
+                <img src="https://app-bn.onrender.com/h-white_1.png" alt="bab nasib icon">
+            </a>
+        </div>
+    </header>
+    <main class="bab-nassib-email-content">
+        <span class="welcome"> مرحبا [first_name]</span>
+        <br><br>
+        <p class="email-content">
+            محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل
+            محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل محتوى الايميل
+        </p>
+    </main>
+    <footer class="bab-nassib-email-footer">
+        <p class="footer-content"></p>
+    </footer>
+
+    <script>
+        const footerContent = document.querySelector(".bab-nassib-email-footer .footer-content")
+        const year = new Date().getFullYear()
+        footerContent.innerHTML = `جميع الحقوق محفوظة لدى  منصة باب نصيب <br> &copy; ${year}`
+    </script>
+</body>
+</html>
